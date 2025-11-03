@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "name": "Angelo Burias",
+    "teamId": "alpha",
+    "height": "5'10\"",
+    "role": "Lead Backend Developer",
+    "achievements": "3x MVP, 2x Hackathon Winner",
+    "image": "/images/players/angelo.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Mark Dela Cruz",
+    "teamId": "alpha",
+    "height": "5'8\"",
+    "role": "Frontend Engineer",
+    "achievements": "Frontend Innovator Award 2024",
+    "image": "/images/players/mark.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Jane Santos",
+    "teamId": "alpha",
+    "height": "5'5\"",
+    "role": "UI/UX Designer",
+    "achievements": "Top UI Designer 2023",
+    "image": "/images/players/jane.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Ella Reyes",
+    "teamId": "beta",
+    "height": "5'6\"",
+    "role": "Project Manager",
+    "achievements": "Leadership Excellence 2023",
+    "image": "/images/players/ella.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Ryan Cruz",
+    "teamId": "beta",
+    "height": "5'9\"",
+    "role": "DevOps Engineer",
+    "achievements": "AWS Certified, CI/CD Architect",
+    "image": "/images/players/ryan.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Kevin Lim",
+    "teamId": "beta",
+    "height": "6'0\"",
+    "role": "Backend Developer",
+    "achievements": "Database Optimization Expert",
+    "image": "/images/players/kevin.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Sophia Tan",
+    "teamId": "gamma",
+    "height": "5'4\"",
+    "role": "QA Specialist",
+    "achievements": "Bug Hunter of the Year 2024",
+    "image": "/images/players/sophia.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Liam Torres",
+    "teamId": "gamma",
+    "height": "5'11\"",
+    "role": "System Architect",
+    "achievements": "Cloud Performance Award 2023",
+    "image": "/images/players/liam.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Noah David",
+    "teamId": "gamma",
+    "height": "6'1\"",
+    "role": "Full Stack Engineer",
+    "achievements": "Innovation Challenge Winner 2024",
+    "image": "/images/players/noah.jpg"
+  }
+]

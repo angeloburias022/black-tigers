@@ -1,0 +1,78 @@
+/* Override root styles for the HomePage component */
+#root {
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: left !important;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Ensure body is full width */
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Reset any default root background colors */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Light mode overrides */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
+
+/* Dark mode overrides */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  }
+}
+
+/* Homepage specific container */
+.homepage-container {
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100vw !important;
+  overflow-x: hidden !important;
+}
+
+/* Remove any padding/margin from main content wrappers */
+.homepage-container * {
+  box-sizing: border-box;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* Button overrides for Material-UI buttons */
+.MuiButton-root {
+  text-transform: none !important;
+}
+
+/* Ensure AppBar is full width */
+.MuiAppBar-root {
+  left: 0 !important;
+  right: 0 !important;
+  width: 100vw !important;
+}

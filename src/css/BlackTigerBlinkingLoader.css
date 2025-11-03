@@ -1,0 +1,41 @@
+.tiger-logo-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+
+.tiger-logo {
+  width: 100%;
+  height: auto;
+}
+
+/* Black overlays that simulate eyelids */
+.blink-layer {
+  position: absolute;
+  width: 50px;  /* adjust based on eye size */
+  height: 25px;
+  background: #000;
+  border-radius: 50%;
+  animation: blink 4s infinite;
+  opacity: 0;
+}
+
+/* Position where the eyes are */
+.left-eye {
+  top: 110px;   /* tweak based on logo eye placement */
+  left: 95px;
+}
+
+.right-eye {
+  top: 110px;
+  right: 95px;
+}
+
+@keyframes blink {
+  0%, 90%, 100% { opacity: 0; transform: scaleY(0); }
+  95% { opacity: 1; transform: scaleY(1); }
+}

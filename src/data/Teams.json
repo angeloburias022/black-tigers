@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Los Angeles Lakers",
+    "description": "Our core elite unit focusing on software innovation.",
+    "logo": "/public/images/team-1.png",
+    "members": ["angelo", "mark", "jane"]
+  },
+  {
+    "id": 2,
+    "name": "Miami Heat ",
+    "description": "Creative problem solvers redefining the frontiers of design.",
+    "logo": "/public/images/team-2.png",
+    "members": ["ella", "ryan", "kevin"]
+  },
+  {
+    "id": 3,
+    "name": "Golden State Warriors",
+    "description": "Experts in performance, scalability, and backend systems.",
+    "logo": "/public/images/team-3.png",
+    "members": ["sophia", "liam", "noah"]
+  }
+]
