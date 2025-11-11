@@ -20,25 +20,24 @@ export default function BlackTigerBlinkingLoader() {
       }}
     >
       <Box
-        component="video"
-        autoPlay
-        muted
-        loop
-        playsInline
+        component="img"
+        src="/images/BT Logo White.png"
+        alt="Black Tigers"
         sx={{
-          minWidth: { xs: '100%', sm: '70%', md: '60%' },
-          minHeight: { xs: '100%', sm: '70%', md: '60%' },
-          maxWidth: '100%',
-          maxHeight: '100%',
-          width: 'auto',
+          width: { xs: '60%', sm: '40%', md: '30%' },
           height: 'auto',
           objectFit: 'contain',
-          objectPosition: 'center',
-          display: 'block',
+          animation: 'blink 1.5s infinite',
         }}
-      >
-        <source src="/videos/blkt-3.mp4" type="video/mp4" />
-      </Box>
+      />
+
+      {/* 👇 simple blink animation */}
+      <style>{`
+        @keyframes blink {
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0.3; }
+        }
+      `}</style>
     </Box>
   );
 }

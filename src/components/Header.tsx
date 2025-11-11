@@ -53,7 +53,7 @@ export default function Header({ onNavigate }: HeaderProps) {
           {/* Logo */}
           <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'center' }}>
             <img
-              src="/images/picsvg_download.svg"
+              src="/images/BT Logo White.png"
               alt="Black Tigers Logo"
               style={{ height: 'auto', maxHeight: '45px', marginRight: 8 }}
             />
