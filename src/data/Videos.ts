@@ -1,8 +1,8 @@
 export const gameVideos = [
-  { id: "QAQAEELizKw" },
-  { id: "ZzBcAki52o4" },
-  { id: "qNEWco56dTs" },
-  {id: "p7db-gEVkR4" },
-  {id:"6GjSjPoxdAc"},
-  {id:"P8FXg7h9PV0"},
+  { id: "jzOwlUW9tKw" },
+  { id: "4LRm5PXZ9eA" },
+  { id: "uixPv7pvH5Q" },
+  {id: "LopriU1fO-E" },
+  {id:"r4jLGIjVxoM"},
+  {id:"LopriU1fO-E"},
 ];

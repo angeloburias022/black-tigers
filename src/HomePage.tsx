@@ -21,13 +21,7 @@ import AboutUs from './components/AboutUs';
 import GameSection from './components/GameSection';
 import Header from './components/Header';
 
-const navLinks = [
-  { label: 'Home', href: '#home' },
-  { label: 'About', href: '#about' },
-  { label: 'Teams', href: '#teams' },
-  { label: 'Games', href: '#games' },
-  { label: 'Contact', href: '#contact' },
-];
+
 
 export default function HomePage() {
   const contactRef = useRef<HTMLDivElement>(null);
@@ -43,8 +37,8 @@ export default function HomePage() {
       contactRef.current.scrollIntoView({ behavior: 'smooth' });
     else if (href === '#about' && aboutRef.current)
       aboutRef.current.scrollIntoView({ behavior: 'smooth' });
-    else if (href === '#teams' && teamRef.current)
-      teamRef.current.scrollIntoView({ behavior: 'smooth' });
+    // else if (href === '#teams' && teamRef.current)
+      // teamRef.current.scrollIntoView({ behavior: 'smooth' });
     else if (href === '#games' && gamesRef.current)
       gamesRef.current.scrollIntoView({ behavior: 'smooth' });
     else if (href === '#home')
@@ -187,7 +181,7 @@ export default function HomePage() {
       {/* ===============================
           Teams & Players Section
       =============================== */}
-      <Box ref={teamRef} id="teams" sx={{ py: 10, bgcolor: '#1a1a1a', color: 'white' }}>
+      {/* <Box ref={teamRef} id="teams" sx={{ py: 10, bgcolor: '#1a1a1a', color: 'white' }}>
         <Container maxWidth="lg">
           {!selectedTeam ? (
             <>
@@ -289,7 +283,7 @@ export default function HomePage() {
             </>
           )}
         </Container>
-      </Box>
+      </Box> */}
 
       {/* ===============================
     Games Section
@@ -298,41 +292,26 @@ export default function HomePage() {
         <GameSection />
       </Box>
 
-
-      {/* ===============================
+{/* ===============================
           Contact Section
       =============================== */}
-      <Box ref={contactRef} id="contact" sx={{ py: 10, bgcolor: '#fff' }}>
+      <Box ref={contactRef} id="contact" sx={{ py: 10, bgcolor: '#f5f5f5' }}>
         <Container maxWidth="md">
-          <Paper
-            elevation={12}
+          <Typography
+            variant="h3"
             sx={{
-              p: { xs: 4, sm: 6, md: 8 },
-              borderRadius: 4,
-              border: '2px solid #EFBF04',
+              textAlign: 'center',
+              color: '#EFBF04',
+              mb: 6,
+              fontWeight: 700,
             }}
           >
-            <Typography
-              variant="h3"
-              sx={{
-                textAlign: 'center',
-                color: '#EFBF04',
-                mb: 2,
-                fontWeight: 700,
-              }}
-            >
-              Get In Touch
-            </Typography>
-            <Typography
-              variant="body1"
-              sx={{ textAlign: 'center', mb: 4 }}
-            >
-              Have a project in mind? We'd love to hear from you.
-            </Typography>
-            <ContactForm />
-          </Paper>
+            Get In Touch
+          </Typography>
+          <ContactForm />
         </Container>
-      </Box>
+      </Box>      
+
 
       {/* ===============================
           Footer

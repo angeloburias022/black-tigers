@@ -17,12 +17,12 @@ interface AboutUsProps {
 
 const AboutUs = forwardRef<HTMLDivElement, AboutUsProps>(({ id }, ref) => {
   const images = [
-    '/images/blacktigers-autumn-2025.jpg',
-    '/images/blacktigers-autumn-2025.jpg',
-    '/images/blacktigers-autumn-2025.jpg',
-    '/images/blacktigers-autumn-2025.jpg',
-    '/images/blacktigers-autumn-2025.jpg',
-    '/images/blacktigers-autumn-2025.jpg',
+    '/images/blk-champ-1.png',
+    '/images/blk-champ-2.png',
+    '/images/blk-champ-3.png',
+    '/images/blk-champ-4.png',
+    // '/images/blk-champ-5.png',
+    '/images/blk-champ-6.png',
   ];
 
   return (
@@ -91,7 +91,7 @@ const AboutUs = forwardRef<HTMLDivElement, AboutUsProps>(({ id }, ref) => {
           </Typography>
 
           {/* Team Image Grid */}
-          <Grid container spacing={3}>
+          <Grid container spacing={3} justifyContent="center">
             {images.map((src, index) => (
               <Grid item xs={12} sm={6} md={4} key={index}>
                 <motion.div

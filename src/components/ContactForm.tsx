@@ -47,25 +47,21 @@ export default function ContactForm() {
 
   return (
     <Paper
-      elevation={4}
+      elevation={8}
       sx={{
-        p: { xs: 3, sm: 5 },
-        maxWidth: 500,
+        p: { xs: 4, sm: 6 },
+        maxWidth: 600,
         mx: 'auto',
-        mt: 8,
-        backgroundColor: '#1e1e1e',
-        color: 'white',
-        borderRadius: '1rem',
+        mt: 4,
+        backgroundColor: '#1E1E1E',
+        color: '#EAEAEA',
+        borderRadius: 4,
       }}
     >
-      <Typography variant="h5" gutterBottom align="center">
-        Contact Us
-      </Typography>
-
       <Box
         component="form"
         onSubmit={handleSubmit}
-        sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}
+        sx={{ display: 'flex', flexDirection: 'column', gap: 2.5 }}
       >
         <TextField
           name="fullName"
@@ -80,14 +76,14 @@ export default function ContactForm() {
             input: {
               sx: {
                 color: 'white',
-                '& .MuiOutlinedInput-notchedOutline': { borderColor: 'gray' },
-                '&:hover .MuiOutlinedInput-notchedOutline': { borderColor: 'white' },
-                '&.Mui-focused .MuiOutlinedInput-notchedOutline': { borderColor: '#646cff' },
+                '& .MuiOutlinedInput-notchedOutline': { borderColor: 'rgba(239,191,4,0.3)' },
+                '&:hover .MuiOutlinedInput-notchedOutline': { borderColor: 'rgba(239,191,4,0.6)' },
+                '&.Mui-focused .MuiOutlinedInput-notchedOutline': { borderColor: '#EFBF04' },
               },
             },
             inputLabel: {
               shrink: true,
-              sx: { color: 'gray', '&.Mui-focused': { color: '#646cff' } },
+              sx: { color: '#CCCCCC', '&.Mui-focused': { color: '#EFBF04' } },
             },
           }}
         />
@@ -105,14 +101,14 @@ export default function ContactForm() {
             input: {
               sx: {
                 color: 'white',
-                '& .MuiOutlinedInput-notchedOutline': { borderColor: 'gray' },
-                '&:hover .MuiOutlinedInput-notchedOutline': { borderColor: 'white' },
-                '&.Mui-focused .MuiOutlinedInput-notchedOutline': { borderColor: '#646cff' },
+                '& .MuiOutlinedInput-notchedOutline': { borderColor: 'rgba(239,191,4,0.3)' },
+                '&:hover .MuiOutlinedInput-notchedOutline': { borderColor: 'rgba(239,191,4,0.6)' },
+                '&.Mui-focused .MuiOutlinedInput-notchedOutline': { borderColor: '#EFBF04' },
               },
             },
             inputLabel: {
               shrink: true,
-              sx: { color: 'gray', '&.Mui-focused': { color: '#646cff' } },
+              sx: { color: '#CCCCCC', '&.Mui-focused': { color: '#EFBF04' } },
             },
           }}
         />
@@ -131,14 +127,14 @@ export default function ContactForm() {
             input: {
               sx: {
                 color: 'white',
-                '& .MuiOutlinedInput-notchedOutline': { borderColor: 'gray' },
-                '&:hover .MuiOutlinedInput-notchedOutline': { borderColor: 'white' },
-                '&.Mui-focused .MuiOutlinedInput-notchedOutline': { borderColor: '#646cff' },
+                '& .MuiOutlinedInput-notchedOutline': { borderColor: 'rgba(239,191,4,0.3)' },
+                '&:hover .MuiOutlinedInput-notchedOutline': { borderColor: 'rgba(239,191,4,0.6)' },
+                '&.Mui-focused .MuiOutlinedInput-notchedOutline': { borderColor: '#EFBF04' },
               },
             },
             inputLabel: {
               shrink: true,
-              sx: { color: 'gray', '&.Mui-focused': { color: '#646cff' } },
+              sx: { color: '#CCCCCC', '&.Mui-focused': { color: '#EFBF04' } },
             },
           }}
         />
@@ -157,14 +153,14 @@ export default function ContactForm() {
             input: {
               sx: {
                 color: 'white',
-                '& .MuiOutlinedInput-notchedOutline': { borderColor: 'gray' },
-                '&:hover .MuiOutlinedInput-notchedOutline': { borderColor: 'white' },
-                '&.Mui-focused .MuiOutlinedInput-notchedOutline': { borderColor: '#646cff' },
+                '& .MuiOutlinedInput-notchedOutline': { borderColor: 'rgba(239,191,4,0.3)' },
+                '&:hover .MuiOutlinedInput-notchedOutline': { borderColor: 'rgba(239,191,4,0.6)' },
+                '&.Mui-focused .MuiOutlinedInput-notchedOutline': { borderColor: '#EFBF04' },
               },
             },
             inputLabel: {
               shrink: true,
-              sx: { color: 'gray', '&.Mui-focused': { color: '#646cff' } },
+              sx: { color: '#CCCCCC', '&.Mui-focused': { color: '#EFBF04' } },
             },
           }}
         />
@@ -175,15 +171,19 @@ export default function ContactForm() {
           disabled={loading}
           sx={{
             mt: 2,
-            backgroundColor: '#646cff',
-            '&:hover': { backgroundColor: '#535bf2' },
+            py: 1.5,
+            backgroundColor: '#EFBF04',
+            color: '#000',
+            fontWeight: 600,
+            '&:hover': { backgroundColor: '#d4a803' },
+            '&:disabled': { backgroundColor: '#666', color: '#999' },
           }}
         >
           {loading ? 'Sending...' : 'Submit'}
         </Button>
 
         {status && (
-          <Typography textAlign="center" sx={{ mt: 1, color: 'white' }}>
+          <Typography textAlign="center" sx={{ mt: 1, color: '#EFBF04', fontWeight: 500 }}>
             {status}
           </Typography>
         )}
