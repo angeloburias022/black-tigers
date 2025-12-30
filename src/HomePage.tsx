@@ -15,7 +15,7 @@ import {
 import Grid from '@mui/material/Grid';
 
 import ContactForm from './components/ContactForm';
-import teamsData from './data/teams.json';
+// import teamsData from './data/teams.json';
 import playersData from './data/players.json';
 import AboutUs from './components/AboutUs';
 import GameSection from './components/GameSection';
@@ -50,7 +50,7 @@ export default function HomePage() {
     ? playersData.filter((p) => Number(p.teamId) === selectedTeam)
     : [];
 
-  const selectedTeamData = teamsData.find((t) => Number(t.id) === selectedTeam);
+  // const selectedTeamData = teamsData.find((t) => Number(t.id) === selectedTeam);
 
   return (
     <Box
