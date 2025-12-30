@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Box, Button, TextField, Typography, Paper } from '@mui/material';
-// import emailjs from 'emailjs-com';
+import emailjs from 'emailjs-com';
 
 export default function ContactForm() {
   const [form, setForm] = useState({
@@ -21,28 +21,28 @@ export default function ContactForm() {
     setLoading(true);
     setStatus('');
 
-    // const templateParams = {
-    //   ...form,
-    //   time: new Date().toLocaleString(),
-    // };
+    const templateParams = {
+      ...form,
+      time: new Date().toLocaleString(),
+    };
 
     setStatus('✅ Message sent successfully!');
     setLoading(false);
     // uncomment the following lines to enable email sending
-    // emailjs
-    //   .send('service_m48x1yr', 'template_8o5v43m', templateParams, 'd5g9G1cD9s0v5gLmm')
-    //   .then(
-    //     () => {
-    //       setStatus('✅ Message sent successfully!');
-    //       setLoading(false);
-    //       setForm({ fullName: '', email: '', message: '', phoneNumber: '' });
-    //     },
-    //     (error) => {
-    //       console.error('FAILED...', error.text);
-    //       setStatus('❌ Failed to send message. Please try again later.');
-    //       setLoading(false);
-    //     }
-    //   );
+    emailjs
+      .send('service_m48x1yr', 'template_8o5v43m', templateParams, 'd5g9G1cD9s0v5gLmm')
+      .then(
+        () => {
+          setStatus('✅ Message sent successfully!');
+          setLoading(false);
+          setForm({ fullName: '', email: '', message: '', phoneNumber: '' });
+        },
+        (error) => {
+          console.error('FAILED...', error.text);
+          setStatus('❌ Failed to send message. Please try again later.');
+          setLoading(false);
+        }
+      );
   };
 
   return (
