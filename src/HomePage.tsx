@@ -1,22 +1,22 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import {
-  AppBar,
+  // AppBar,
   Box,
-  Toolbar,
+  // Toolbar,
   Typography,
   Button,
   Container,
-  Paper,
-  Card,
-  CardMedia,
-  CardContent
+  // Paper,
+  // Card,
+  // CardMedia,
+  // CardContent
 } from '@mui/material';
 
-import Grid from '@mui/material/Grid';
+// import Grid from '@mui/material/Grid';
 
 import ContactForm from './components/ContactForm';
 // import teamsData from './data/teams.json';
-import playersData from './data/players.json';
+// import playersData from './data/players.json';
 import AboutUs from './components/AboutUs';
 import GameSection from './components/GameSection';
 import Header from './components/Header';
@@ -26,10 +26,10 @@ import Header from './components/Header';
 export default function HomePage() {
   const contactRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
-  const teamRef = useRef<HTMLDivElement>(null);
+  // const teamRef = useRef<HTMLDivElement>(null);
   const gamesRef = useRef<HTMLDivElement>(null);
 
-  const [selectedTeam, setSelectedTeam] = useState<number | null>(null);
+  // const [selectedTeam, setSelectedTeam] = useState<number | null>(null);
 
   const handleScroll = (event: React.MouseEvent, href: string) => {
     event.preventDefault();
@@ -45,10 +45,10 @@ export default function HomePage() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const handleBack = () => setSelectedTeam(null);
-  const selectedPlayers = selectedTeam
-    ? playersData.filter((p) => Number(p.teamId) === selectedTeam)
-    : [];
+  // const handleBack = () => setSelectedTeam(null);
+  // const selectedPlayers = selectedTeam
+  //   ? playersData.filter((p) => Number(p.teamId) === selectedTeam)
+  //   : [];
 
   // const selectedTeamData = teamsData.find((t) => Number(t.id) === selectedTeam);
 
