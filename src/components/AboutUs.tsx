@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import { forwardRef } from 'react';
 import {
   Box,
   Container,
@@ -9,6 +9,7 @@ import {
   CardMedia,
   CardContent,
 } from '@mui/material';
+import type { GridProps } from '@mui/material';
 import { motion } from 'framer-motion';
 
 interface AboutUsProps {
@@ -93,7 +94,15 @@ const AboutUs = forwardRef<HTMLDivElement, AboutUsProps>(({ id }, ref) => {
           {/* Team Image Grid */}
           <Grid container spacing={3} justifyContent="center">
             {images.map((src, index) => (
-              <Grid item xs={12} sm={6} md={4} key={index}>
+              <Grid 
+                {...{
+                  item: true,
+                  xs: 12,
+                  sm: 6,
+                  md: 4,
+                  key: index,
+                } as GridProps}
+              >
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3 }}
@@ -145,7 +154,7 @@ const AboutUs = forwardRef<HTMLDivElement, AboutUsProps>(({ id }, ref) => {
               fontStyle: 'italic',
             }}
           >
-            “Strength in unity, innovation in motion.”
+            "Strength in unity, innovation in motion."
           </Typography> */}
         </Paper>
       </Container>
