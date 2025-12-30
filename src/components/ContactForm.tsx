@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Box, Button, TextField, Typography, Paper } from '@mui/material';
-import emailjs from 'emailjs-com';
+// import emailjs from 'emailjs-com';
 
 export default function ContactForm() {
   const [form, setForm] = useState({
@@ -21,10 +21,10 @@ export default function ContactForm() {
     setLoading(true);
     setStatus('');
 
-    const templateParams = {
-      ...form,
-      time: new Date().toLocaleString(),
-    };
+    // const templateParams = {
+    //   ...form,
+    //   time: new Date().toLocaleString(),
+    // };
 
     setStatus('✅ Message sent successfully!');
     setLoading(false);

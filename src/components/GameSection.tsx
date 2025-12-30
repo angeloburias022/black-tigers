@@ -1,4 +1,5 @@
 import { Container, Typography, Grid } from "@mui/material";
+import type { GridProps } from "@mui/material";
 import { gameVideos } from "../data/Videos";
 import YouTubeVideo from "./YoutubeVideo";
 
@@ -11,7 +12,15 @@ export default function GameSection() {
 
       <Grid container spacing={4} justifyContent="center">
         {gameVideos.map((video) => (
-          <Grid item xs={12} sm={6} md={4} key={video.id}>
+          <Grid 
+            {...{
+              item: true,
+              xs: 12,
+              sm: 6,
+              md: 4,
+              key: video.id,
+            } as GridProps}
+          >
             <YouTubeVideo videoId={video.id} />
           </Grid>
         ))}

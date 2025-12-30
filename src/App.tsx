@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Fade } from '@mui/material';
-import BlackTigerBlinkingLoader from './components/BlackTigerLoader';
+// import BlackTigerBlinkingLoader from './components/BlackTigerLoader';
 import HomePage from './HomePage';
 import CssBaseline from '@mui/material/CssBaseline';
 import BlackTigerLandingPage from './components/BlackTigerLandingPage';
